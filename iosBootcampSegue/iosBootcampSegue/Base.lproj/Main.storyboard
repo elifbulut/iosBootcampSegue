@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v6n-n4-EPk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HOMEPAGE-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iosBootcampSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-3Y-CSf">
+                                <rect key="frame" x="155" y="364.5" width="109" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="LD6-tR-10z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="A">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseBackgroundColor" red="0.808463454246521" green="0.29432100057601929" blue="0.40279662609100342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HhM-qv-eje"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTX-Uq-xlT">
+                                <rect key="frame" x="155" y="507.5" width="109" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="F9a-K1-3Gx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="rR6-ED-9j7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="X">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseBackgroundColor" red="0.99982398748397827" green="0.64270246028900146" blue="0.75950789451599121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ex-gP-Y0q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gTX-Uq-xlT" firstAttribute="top" secondItem="uzk-3Y-CSf" secondAttribute="bottom" constant="105" id="KHG-BE-58h"/>
+                            <constraint firstItem="gTX-Uq-xlT" firstAttribute="leading" secondItem="uzk-3Y-CSf" secondAttribute="leading" id="WuK-uO-jUR"/>
+                            <constraint firstItem="gTX-Uq-xlT" firstAttribute="trailing" secondItem="uzk-3Y-CSf" secondAttribute="trailing" id="Zld-6W-q1I"/>
+                            <constraint firstItem="gTX-Uq-xlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="bJ4-SI-feK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gTX-Uq-xlT" secondAttribute="trailing" constant="150" id="dvM-n4-u0R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gTX-Uq-xlT" secondAttribute="bottom" constant="314.5" id="phF-AQ-GFF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOMEPAGE" id="ArJ-Yl-ngk"/>
+                    <connections>
+                        <segue destination="9GL-vX-KTB" kind="show" identifier="toA" id="T68-mz-Kj4"/>
+                        <segue destination="7O2-lc-ft9" kind="show" identifier="toX" id="3ku-07-Ydb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="51.5625"/>
+        </scene>
+        <!--SAYFA A-->
+        <scene sceneID="MLP-b7-Ge8">
+            <objects>
+                <viewController id="9GL-vX-KTB" customClass="sayfaA" customModule="iosBootcampSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fko-T3-vM7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoX-mU-rp2">
+                                <rect key="frame" x="153" y="426" width="108" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to B">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToBbutton:" destination="9GL-vX-KTB" eventType="touchUpInside" id="d9O-e3-fjD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Adr-sh-NXz"/>
+                        <color key="backgroundColor" red="0.808463454246521" green="0.29432100057601929" blue="0.40279662609100342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GoX-mU-rp2" firstAttribute="centerY" secondItem="Fko-T3-vM7" secondAttribute="centerY" id="8BB-E3-Z1W"/>
+                            <constraint firstItem="GoX-mU-rp2" firstAttribute="centerX" secondItem="Fko-T3-vM7" secondAttribute="centerX" id="8ct-uU-Zdq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SAYFA A" id="P7M-R8-56b"/>
+                    <connections>
+                        <segue destination="8js-wd-OiG" kind="show" identifier="toB" id="fCb-yb-Y0s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJ5-G1-8Iz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="-205.58035714285714"/>
+        </scene>
+        <!--SAYFA B-->
+        <scene sceneID="bzG-kU-lwf">
+            <objects>
+                <viewController id="8js-wd-OiG" customClass="sayfaB" customModule="iosBootcampSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FZp-Ld-AZU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-pd-SFK">
+                                <rect key="frame" x="154.5" y="426.5" width="105" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to Y">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToBbutton:" destination="9GL-vX-KTB" eventType="touchUpInside" id="EGP-ZN-5mw"/>
+                                    <action selector="goToYbutton:" destination="8js-wd-OiG" eventType="touchUpInside" id="XzK-Us-iEI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jr8-pO-5ME"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="9G0-pd-SFK" firstAttribute="centerY" secondItem="FZp-Ld-AZU" secondAttribute="centerY" id="5gz-ym-x3i"/>
+                            <constraint firstItem="9G0-pd-SFK" firstAttribute="centerX" secondItem="FZp-Ld-AZU" secondAttribute="centerX" id="yij-31-17k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SAYFA B" id="e54-Tv-ZX7"/>
+                    <connections>
+                        <segue destination="aXn-K6-Xsn" kind="show" identifier="toY" id="YlF-mT-15X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0np-Ie-SOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2719" y="-206"/>
+        </scene>
+        <!--SAYFA X-->
+        <scene sceneID="SpC-8r-bTq">
+            <objects>
+                <viewController id="7O2-lc-ft9" customClass="sayfaX" customModule="iosBootcampSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Sa-a8-YaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJN-PK-RhY">
+                                <rect key="frame" x="156.5" y="427.5" width="101.5" height="41.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to Y">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToBbutton:" destination="9GL-vX-KTB" eventType="touchUpInside" id="9vk-Dg-08D"/>
+                                    <action selector="goToYbutton:" destination="7O2-lc-ft9" eventType="touchUpInside" id="8Lu-My-6ae"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MSd-d7-9w5"/>
+                        <color key="backgroundColor" red="0.99982398748397827" green="0.64270246028900146" blue="0.75950789451599121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fJN-PK-RhY" firstAttribute="centerX" secondItem="1Sa-a8-YaZ" secondAttribute="centerX" id="78d-Hj-VOy"/>
+                            <constraint firstItem="fJN-PK-RhY" firstAttribute="centerY" secondItem="1Sa-a8-YaZ" secondAttribute="centerY" id="e7c-JF-isy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SAYFA X" id="lnU-d6-Ywy"/>
+                    <connections>
+                        <segue destination="aXn-K6-Xsn" kind="show" identifier="toY2" id="LzN-mM-pT8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpU-2m-EVS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="505.58035714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jNf-G9-cTT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v6n-n4-EPk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="0ho-aP-6U3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q1F-u5-TCT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBI-sd-QMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="51.5625"/>
+        </scene>
+        <!--SAYFA Y-->
+        <scene sceneID="jLf-SB-gvo">
+            <objects>
+                <viewController id="aXn-K6-Xsn" customClass="sayfaY" customModule="iosBootcampSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LBY-tY-v5F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OZ-Sx-Bul">
+                                <rect key="frame" x="106" y="428" width="204" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to Homepage">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                    <color key="baseForegroundColor" systemColor="systemMintColor"/>
+                                    <color key="baseBackgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToBbutton:" destination="9GL-vX-KTB" eventType="touchUpInside" id="eZs-hO-SQw"/>
+                                    <action selector="goToHomepage:" destination="aXn-K6-Xsn" eventType="touchUpInside" id="hsg-ij-N8G"/>
+                                    <action selector="goToYbutton:" destination="7O2-lc-ft9" eventType="touchUpInside" id="hgW-3T-snc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jb6-EV-lNf"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="1OZ-Sx-Bul" firstAttribute="top" secondItem="Jb6-EV-lNf" secondAttribute="top" constant="288" id="CVa-GU-EGr"/>
+                            <constraint firstItem="1OZ-Sx-Bul" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jb6-EV-lNf" secondAttribute="leading" id="HY4-9Z-OZj"/>
+                            <constraint firstItem="Jb6-EV-lNf" firstAttribute="trailing" secondItem="1OZ-Sx-Bul" secondAttribute="trailing" constant="104" id="ryr-1b-Eb3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SAYFA Y" id="uNU-3v-gi2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcQ-5a-ibu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2719" y="506"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LzN-mM-pT8"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
